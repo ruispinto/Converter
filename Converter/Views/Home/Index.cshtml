@@ -1,0 +1,404 @@
+﻿<div class="vh-100" id="length">
+    <div class="d-flex justify-content-center">
+        <div class="col-4">
+            <h2 class="text-center" style="margin-top: 80px;">Conversion into Length Units</h2>
+            <label for="lengthValue" class="mt-5">Value:</label>
+            <input id="lengthValue" class="form-control my-2" type="number" placeholder="Enter value">
+            From <select id="lengthFrom" class="form-select my-2">
+                <option value="in">Inches</option>
+                <option value="cm">Centimeters</option>
+                <option value="ft">Feet</option>
+                <option value="m">Meters</option>
+                <option value="km">Kilometers</option>
+                <option value="mi">Miles</option>
+                <option value="yard">Yards</option>
+            </select>
+            To <select id="lengthTo" class="form-select my-2">
+                <option value="cm">Centimeters</option>
+                <option value="in">Inches</option>
+                <option value="m">Meters</option>
+                <option value="ft">Feet</option>
+                <option value="mi">Miles</option>
+                <option value="km">Kilometers</option>
+                <option value="yard">Yards</option>
+            </select>
+            <button id="lengthConvert" class="btn btn-secondary my-2">Convert</button>
+            <div id="lengthResult" class="mt-2"></div>
+        </div>
+    </div>
+</div>
+
+<div class="vh-100" id="weight">
+    <div class="d-flex justify-content-center">
+        <div class="col-4">
+            <h2 class="text-center" style="margin-top: 80px;">Conversion into Weight Units</h2>
+            <label for="weightValue" class="mt-5">Value:</label>
+            <input id="weightValue" class="form-control my-2" type="number" placeholder="Enter value">
+            From <select id="weightFrom" class="form-select my-2">
+                <option value="kg">Kilograms</option>
+                <option value="g">Grams</option>
+                <option value="t">Metric ton</option>
+                <option value="lbs">Pounds</option>
+                <option value="oz">Ounces</option>
+                <option value="ca">Carrats</option>
+                <option value="amu">Atomic mass units</option>
+            </select>
+            To <select id="weightTo" class="form-select my-2">
+                <option value="g">Grams</option>
+                <option value="kg">Kilograms</option>
+                <option value="t">Metric ton</option>
+                <option value="lbs">Pounds</option>
+                <option value="oz">Ounces</option>
+                <option value="ca">Carrats</option>
+                <option value="amu">Atomic mass units</option>
+            </select>
+            <button id="weightConvert" class="btn btn-secondary my-2">Convert</button>
+            <div id="weightResult" class="mt-2"></div>
+        </div>
+    </div>
+</div>
+
+<div class="vh-100" id="volume">
+    <div class="d-flex justify-content-center">
+        <div class="col-4">
+            <h2 class="text-center" style="margin-top: 80px;">Conversion into Volume Units</h2>
+            <label for="volumeValue" class="mt-5">Value:</label>
+            <input id="volumeValue" class="form-control my-2" type="number" placeholder="Enter value">
+            From <select id="volumeFrom" class="form-select my-2">
+                <option value="lt">Liter</option>
+                <option value="ml">Mililiter</option>
+                <option value="m3">Cubic meter</option>
+                <option value="us_gal">US gallon</option>
+                <option value="uk_gal">Imperial gallon</option>
+                <option value="p">Imperial pint</option>
+                <option value="i3">Cubic inch</option>
+                <option value="y3">Cubic yard</option>
+                <option value="f3">Cubic foot</option>
+            </select>
+            To <select id="volumeTo" class="form-select my-2">
+                <option value="ml">Mililiter</option>
+                <option value="lt">Liter</option>
+                <option value="m3">Cubic meter</option>
+                <option value="us_gal">US gallon</option>
+                <option value="uk_gal">Imperial gallon</option>
+                <option value="p">Imperial pint</option>
+                <option value="i3">Cubic inch</option>
+                <option value="y3">Cubic yard</option>
+                <option value="f3">Cubic foot</option>
+            </select>
+            <button id="volumeConvert" class="btn btn-secondary my-2">Convert</button>
+            <div id="volumeResult" class="mt-2"></div>
+        </div>
+    </div>
+</div>
+
+<div class="vh-100" id="area">
+    <div class="d-flex justify-content-center">
+        <div class="col-4">
+            <h2 class="text-center" style="margin-top: 80px;">Conversion into Area Units</h2>
+            <label for="areaValue" class="mt-5">Value:</label>
+            <input id="areaValue" class="form-control my-2" type="number" placeholder="Enter value">
+            From <select id="areaFrom" class="form-select my-2">
+                <option value="m2">Square meter</option>
+                <option value="cm2">Square centimeter</option>
+                <option value="sk">Square kilometer</option>
+                <option value="h">Hectare</option>
+                <option value="mi2">Square mile</option>
+                <option value="sy">Square yard</option>
+                <option value="sf">Square foot</option>
+                <option value="si">Square inch</option>
+                <option value="a">Acre</option>
+            </select>
+            To <select id="areaTo" class="form-select my-2">
+                <option value="mi2">Square mile</option>
+                <option value="m2">Square meter</option>
+                <option value="cm2">Square centimeter</option>
+                <option value="sk">Square kilometer</option>
+                <option value="h">Hectare</option>
+                <option value="sy">Square yard</option>
+                <option value="sf">Square foot</option>
+                <option value="si">Square inch</option>
+                <option value="a">Acre</option>
+            </select>
+            <button id="areaConvert" class="btn btn-secondary my-2">Convert</button>
+            <div id="areaResult" class="mt-2"></div>
+        </div>
+    </div>
+</div>
+
+<div class="vh-100" id="temperature">
+    <div class="d-flex justify-content-center">
+        <div class="col-4">
+            <h2 class="text-center" style="margin-top: 80px;">Conversion into Temperature Units</h2>
+            <label for="temperatureValue" class="mt-5">Value:</label>
+            <input id="temperatureValue" class="form-control my-2" type="number" placeholder="Enter value">
+            From <select id="temperatureFrom" class="form-select my-2">
+                <option value="c">Celsius</option>
+                <option value="f">Fahrenheit</option>
+                <option value="k">Kelvin</option>
+            </select>
+            To <select id="temperatureTo" class="form-select my-2">
+                <option value="f">Fahrenheit</option>
+                <option value="c">Celsius</option>
+                <option value="k">Kelvin</option>
+            </select>
+            <button id="temperatureConvert" class="btn btn-secondary my-2">Convert</button>
+            <div id="temperatureResult" class="mt-2"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<footer class="text-center fixed-bottom bg-primary text-white py-4">
+    &copy; 2025 Converter by Rui Pinto
+</footer>
+
+
+<script>
+    const toggleButton = document.getElementById('toggle-theme');
+    const themeStylesheet = document.getElementById('theme-stylesheet');
+
+    toggleButton.addEventListener('click', () => {
+        if (themeStylesheet.getAttribute('href') === 'https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.7/flatly/bootstrap.min.css') {
+            themeStylesheet.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.7/darkly/bootstrap.min.css');
+            toggleButton.innerHTML = '<i class="bi bi-brightness-high-fill m-2"></i>';
+        } else {
+            themeStylesheet.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.7/flatly/bootstrap.min.css');
+            toggleButton.innerHTML = '<i class="bi bi-moon-fill m-2"></i>';
+        }
+    });
+</script>
+
+
+<!-- ***  Length  *** -->
+<script>
+    document.getElementById('lengthConvert').addEventListener('click', function() {
+        const value = parseFloat(document.getElementById('lengthValue').value);
+        const fromUnit = document.getElementById('lengthFrom').value;
+        const toUnit = document.getElementById('lengthTo').value;
+
+        const conversionRates = {
+            in: 2.54, // inches to cm
+            cm: 0.393701, // cm to inches
+            ft: 0.3048, // feet to meters
+            m: 3.28084, // meters to feet
+            km: 0.621371, // kilometers to miles
+            mi: 1.60934, // miles to kilometers
+            yard: 0.9144, // yards to meters
+        };
+
+        let result;
+
+        // Convert to meters first
+        let valueInMeters;
+        switch (fromUnit) {
+            case 'in':
+                valueInMeters = value * conversionRates.in / 100; // inches to meters
+                break;
+            case 'cm':
+                valueInMeters = value / 100; // cm to meters
+                break;
+            case 'ft':
+                valueInMeters = value * conversionRates.ft; // feet to meters
+                break;
+            case 'm':
+                valueInMeters = value; // already in meters
+                break;
+            case 'km':
+                valueInMeters = value * 1000; // kilometers to meters
+                break;
+            case 'mi':
+                valueInMeters = value * conversionRates.mi * 1000; // miles to meters
+                break;
+            case 'yard':
+                valueInMeters = value * conversionRates.yard; // yards to meters
+                break;
+        }
+
+        // Convert from meters to the target unit
+        switch (toUnit) {
+            case 'cm':
+                result = valueInMeters * 100; // meters to cm
+                break;
+            case 'in':
+                result = valueInMeters * 100 / conversionRates.in; // meters to inches
+                break;
+            case 'ft':
+                result = valueInMeters / conversionRates.ft; // meters to feet
+                break;
+            case 'm':
+                result = valueInMeters; // already in meters
+                break;
+            case 'km':
+                result = valueInMeters / 1000; // meters to kilometers
+                break;
+            case 'mi':
+                result = valueInMeters / (conversionRates.mi * 1000); // meters to miles
+                break;
+            case 'yard':
+                result = valueInMeters / conversionRates.yard; // meters to yards
+                break;
+        }
+
+        // Display the result
+        document.getElementById('lengthResult').innerHTML = `Result: ${result.toFixed(2)} ${toUnit}`;
+    });
+</script>
+
+
+<!-- ***  Weight  *** -->
+<script>
+    document.getElementById('weightConvert').addEventListener('click', function() {
+        const value = parseFloat(document.getElementById('weightValue').value);
+        const fromUnit = document.getElementById('weightFrom').value;
+        const toUnit = document.getElementById('weightTo').value;
+
+        // Conversion rates to kilograms
+        const conversionRates = {
+            kg: 1,          // Kilograms
+            g: 0.001,      // Grams
+            t: 1000,        // Metric ton
+            lbs: 0.453592,  // Pounds
+            oz: 0.0283495,  // Ounces
+            ca: 0.0002,     // Carats
+            amu: 1.66054e-27 // Atomic mass units
+        };
+
+        // Convert the input value to kilograms
+        let valueInKg = value * conversionRates[fromUnit];
+
+        // Convert from kilograms to the target unit
+        let result;
+        if (toUnit in conversionRates) {
+            result = valueInKg / conversionRates[toUnit];
+        } else {
+            result = 'Invalid unit';
+        }
+
+        // Display the result
+        document.getElementById('weightResult').innerHTML = `Result: ${result.toFixed(2)} ${toUnit}`;
+    });
+</script>
+
+
+<!-- ***  Volume  *** -->
+<script>
+    document.getElementById('volumeConvert').addEventListener('click', function() {
+        const value = parseFloat(document.getElementById('volumeValue').value);
+        const fromUnit = document.getElementById('volumeFrom').value;
+        const toUnit = document.getElementById('volumeTo').value;
+
+        // Conversion rates to liters
+        const conversionRates = {
+            lt: 1,          // Liters
+            ml: 0.001,      // Milliliters
+            m3: 1000,       // Cubic meters
+            us_gal: 3.78541,// US gallons
+            uk_gal: 4.54609,// Imperial gallons
+            p: 0.568261,    // Imperial pints
+            i3: 0.0163871,  // Cubic inches
+            y3: 764.554857, // Cubic yards
+            f3: 28.3168466  // Cubic feet
+        };
+
+        // Convert the input value to liters
+        let valueInLiters = value * conversionRates[fromUnit];
+
+        // Convert from liters to the target unit
+        let result;
+        if (toUnit in conversionRates) {
+            result = valueInLiters / conversionRates[toUnit];
+        } else {
+            result = 'Invalid unit';
+        }
+
+        // Display the result
+        document.getElementById('volumeResult').innerHTML = `Result: ${result.toFixed(2)} ${toUnit}`;
+    });
+</script>
+
+
+<!-- ***  Area  *** -->
+<script>
+    document.getElementById('areaConvert').addEventListener('click', function() {
+        const value = parseFloat(document.getElementById('areaValue').value);
+        const fromUnit = document.getElementById('areaFrom').value;
+        const toUnit = document.getElementById('areaTo').value;
+
+        // Conversion rates to square meters
+        const conversionRates = {
+            m2: 1,              // Square meter
+            cm2: 0.0001,        // Square centimeter
+            sk: 1000000,        // Square kilometer
+            h: 10000,           // Hectare
+            mi2: 2589988.11,    // Square mile
+            sy: 0.836127,       // Square yard
+            sf: 0.092903,       // Square foot
+            si: 0.00064516,     // Square inch
+            a: 4046.86          // Acre
+        };
+
+        // Convert the input value to square meters
+        let valueInSquareMeters = value * conversionRates[fromUnit];
+
+        // Convert from square meters to the target unit
+        let result;
+        if (toUnit in conversionRates) {
+            result = valueInSquareMeters / conversionRates[toUnit];
+        } else {
+            result = 'Invalid unit';
+        }
+
+        // Display the result
+        document.getElementById('areaResult').innerHTML = `Result: ${result.toFixed(2)} ${toUnit}`;
+    });
+</script>
+
+
+<!-- ***  Temperature  *** -->
+<script>
+    document.getElementById('temperatureConvert').addEventListener('click', function() {
+        const value = parseFloat(document.getElementById('temperatureValue').value);
+        const fromUnit = document.getElementById('temperatureFrom').value;
+        const toUnit = document.getElementById('temperatureTo').value;
+
+        let result;
+
+        // Conversion logic
+        if (fromUnit === 'c') {
+            if (toUnit === 'f') {
+                result = (value * 9/5) + 32; // Celsius to Fahrenheit
+            } else if (toUnit === 'k') {
+                result = value + 273.15; // Celsius to Kelvin
+            } else {
+                result = value; // Celsius to Celsius
+            }
+        } else if (fromUnit === 'f') {
+            if (toUnit === 'c') {
+                result = (value - 32) * 5/9; // Fahrenheit to Celsius
+            } else if (toUnit === 'k') {
+                result = (value - 32) * 5/9 + 273.15; // Fahrenheit to Kelvin
+            } else {
+                result = value; // Fahrenheit to Fahrenheit
+            }
+        } else if (fromUnit === 'k') {
+            if (toUnit === 'c') {
+                result = value - 273.15; // Kelvin to Celsius
+            } else if (toUnit === 'f') {
+                result = (value - 273.15) * 9/5 + 32; // Kelvin to Fahrenheit
+            } else {
+                result = value; // Kelvin to Kelvin
+            }
+        } else {
+            result = 'Invalid unit';
+        }
+
+        // Display the result
+        document.getElementById('temperatureResult').innerHTML = `Result: ${result.toFixed(2)} ${toUnit}`;
+    });
+</script>
+
+<script src="~/js/app.js"></script>

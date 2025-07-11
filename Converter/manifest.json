@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Converter",
+    "short_name": "Converter",
+    "description": "Converts between different units of measurement including weight, volume, area, and temperature.",
+    "version": "1.0",
+    "icons": {
+        "16": "images/icon-16.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    },
+    "start_url": "/index.html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/"
+}
